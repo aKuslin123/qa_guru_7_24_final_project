@@ -68,6 +68,14 @@ ___
 ![Allure TestOps](./img/Allure_TestOps.png)
 
 ---
+## Добавлена интеграция с Jira, где можно посмотреть запускаемые кейсы и их результаты.
+
+Перейти в Jira можно [по ссылке](https://jira.autotests.cloud/projects/HOMEWORK/issues/HOMEWORK-273?filter=allissues)
+
+![Jira](./img/Jira.png)
+
+---
+
 
 ### Видео прохождения теста, взятое из среды выполнения (из Selenoid)
 
