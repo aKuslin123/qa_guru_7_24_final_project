@@ -1,5 +1,7 @@
 package cloud.autotests.tests.ui;
 
+import cloud.autotests.annotations.JiraIssue;
+import cloud.autotests.annotations.JiraIssues;
 import cloud.autotests.data.CategoryItem;
 import cloud.autotests.pages.MainPage;
 import cloud.autotests.pages.RegisterPage;
@@ -15,6 +17,7 @@ public class DemowebshopTests extends TestBase {
     RegisterPage registerPage = new RegisterPage();
 
     @Test
+    @JiraIssues({@JiraIssue("HOMEWORK-111")})
     void openedCategoryBooksTest() {
         mainPage.openPage()
                 .navigateToCategory(CategoryItem.BOOKS)
@@ -22,6 +25,7 @@ public class DemowebshopTests extends TestBase {
     }
 
     @Test
+    @JiraIssues({@JiraIssue("HOMEWORK-111")})
     void openedCategoryComputersTest() {
         mainPage.openPage()
                 .navigateToCategory(CategoryItem.COMPUTERS)
@@ -29,6 +33,7 @@ public class DemowebshopTests extends TestBase {
     }
 
     @Test
+    @JiraIssues({@JiraIssue("HOMEWORK-111")})
     void checkBooksQuantityTest() {
         mainPage.openPage()
                 .checkOpenedPage("Welcome to our store")
@@ -38,6 +43,7 @@ public class DemowebshopTests extends TestBase {
     }
 
     @Test
+    @JiraIssues({@JiraIssue("HOMEWORK-111")})
     void successfulRegistrationTest() {
         registerPage.openPage()
                     .typeFirstName()
@@ -50,6 +56,7 @@ public class DemowebshopTests extends TestBase {
     }
 
     @Test
+    @JiraIssues({@JiraIssue("HOMEWORK-111")})
     void addToCartWithCookieTest() {
         mainPage.openPage();
         step("Делаем запрос на добавление продукта в корзину с куками, проверяем statusCode = 200, success = true", () -> {

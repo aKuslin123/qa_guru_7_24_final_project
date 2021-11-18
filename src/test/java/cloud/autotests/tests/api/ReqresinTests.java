@@ -1,5 +1,7 @@
 package cloud.autotests.tests.api;
 
+import cloud.autotests.annotations.JiraIssue;
+import cloud.autotests.annotations.JiraIssues;
 import cloud.autotests.model.User;
 import cloud.autotests.tests.TestBaseApi;
 import org.junit.jupiter.api.Test;
@@ -11,6 +13,7 @@ import static org.hamcrest.CoreMatchers.is;
 public class ReqresinTests extends TestBaseApi {
 
     @Test
+    @JiraIssues({@JiraIssue("HOMEWORK-111")})
     void registerUserTest() {
         User user = new User();
         user.setEmail("eve.holt@reqres.in");
@@ -27,6 +30,7 @@ public class ReqresinTests extends TestBaseApi {
     }
 
     @Test
+    @JiraIssues({@JiraIssue("HOMEWORK-111")})
     void successLoginTest() {
         User user = new User();
         user.setEmail("eve.holt@reqres.in");
@@ -42,6 +46,7 @@ public class ReqresinTests extends TestBaseApi {
     }
 
     @Test
+    @JiraIssues({@JiraIssue("HOMEWORK-111")})
     void successCreateTest() {
         User user = new User();
         user.setName("morpheus");
@@ -58,6 +63,7 @@ public class ReqresinTests extends TestBaseApi {
     }
 
     @Test
+    @JiraIssues({@JiraIssue("HOMEWORK-111")})
     void unsuccess404UpdateTest() {
         User user = new User();
         user.setName("morpheus");
@@ -72,6 +78,7 @@ public class ReqresinTests extends TestBaseApi {
     }
 
     @Test
+    @JiraIssues({@JiraIssue("HOMEWORK-111")})
     void successDeleteTest() {
         given()
                 .when()
