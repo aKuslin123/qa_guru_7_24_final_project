@@ -17,7 +17,7 @@ public class DemowebshopTests extends TestBase {
     RegisterPage registerPage = new RegisterPage();
 
     @Test
-    @JiraIssues({@JiraIssue("HOMEWORK-111")})
+    @JiraIssues({@JiraIssue("HOMEWORK-273")})
     void openedCategoryBooksTest() {
         mainPage.openPage()
                 .navigateToCategory(CategoryItem.BOOKS)
@@ -25,7 +25,7 @@ public class DemowebshopTests extends TestBase {
     }
 
     @Test
-    @JiraIssues({@JiraIssue("HOMEWORK-111")})
+    @JiraIssues({@JiraIssue("HOMEWORK-273")})
     void openedCategoryComputersTest() {
         mainPage.openPage()
                 .navigateToCategory(CategoryItem.COMPUTERS)
@@ -33,7 +33,7 @@ public class DemowebshopTests extends TestBase {
     }
 
     @Test
-    @JiraIssues({@JiraIssue("HOMEWORK-111")})
+    @JiraIssues({@JiraIssue("HOMEWORK-273")})
     void checkBooksQuantityTest() {
         mainPage.openPage()
                 .checkOpenedPage("Welcome to our store")
@@ -43,7 +43,7 @@ public class DemowebshopTests extends TestBase {
     }
 
     @Test
-    @JiraIssues({@JiraIssue("HOMEWORK-111")})
+    @JiraIssues({@JiraIssue("HOMEWORK-273")})
     void successfulRegistrationTest() {
         registerPage.openPage()
                     .typeFirstName()
@@ -56,7 +56,7 @@ public class DemowebshopTests extends TestBase {
     }
 
     @Test
-    @JiraIssues({@JiraIssue("HOMEWORK-111")})
+    @JiraIssues({@JiraIssue("HOMEWORK-273")})
     void addToCartWithCookieTest() {
         mainPage.openPage();
         step("Делаем запрос на добавление продукта в корзину с куками, проверяем statusCode = 200, success = true", () -> {

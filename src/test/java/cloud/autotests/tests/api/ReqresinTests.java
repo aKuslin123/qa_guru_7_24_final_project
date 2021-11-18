@@ -13,7 +13,7 @@ import static org.hamcrest.CoreMatchers.is;
 public class ReqresinTests extends TestBaseApi {
 
     @Test
-    @JiraIssues({@JiraIssue("HOMEWORK-111")})
+    @JiraIssues({@JiraIssue("HOMEWORK-273")})
     void registerUserTest() {
         User user = new User();
         user.setEmail("eve.holt@reqres.in");
@@ -30,7 +30,7 @@ public class ReqresinTests extends TestBaseApi {
     }
 
     @Test
-    @JiraIssues({@JiraIssue("HOMEWORK-111")})
+    @JiraIssues({@JiraIssue("HOMEWORK-273")})
     void successLoginTest() {
         User user = new User();
         user.setEmail("eve.holt@reqres.in");
@@ -46,7 +46,7 @@ public class ReqresinTests extends TestBaseApi {
     }
 
     @Test
-    @JiraIssues({@JiraIssue("HOMEWORK-111")})
+    @JiraIssues({@JiraIssue("HOMEWORK-273")})
     void successCreateTest() {
         User user = new User();
         user.setName("morpheus");
@@ -63,7 +63,7 @@ public class ReqresinTests extends TestBaseApi {
     }
 
     @Test
-    @JiraIssues({@JiraIssue("HOMEWORK-111")})
+    @JiraIssues({@JiraIssue("HOMEWORK-273")})
     void unsuccess404UpdateTest() {
         User user = new User();
         user.setName("morpheus");
@@ -78,7 +78,7 @@ public class ReqresinTests extends TestBaseApi {
     }
 
     @Test
-    @JiraIssues({@JiraIssue("HOMEWORK-111")})
+    @JiraIssues({@JiraIssue("HOMEWORK-273")})
     void successDeleteTest() {
         given()
                 .when()
