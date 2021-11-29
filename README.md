@@ -12,6 +12,8 @@ ___
 
 ### Используемые параметры по умолчанию
 
+![Jenkins](./img/Jenkins.png)
+
 * browser (default chrome)
 * browserVersion (default 89.0)
 * browserSize (default 1920x1080)
@@ -19,8 +21,6 @@ ___
 * remoteDriverUrl (url address from selenoid or grid)
 * videoStorage (url address where you should get video)
 * threads (number of threads)
-
-![Jenkins](./img/Jenkins.png)
 
 Run tests with filled remote.properties:
 
@@ -53,8 +53,6 @@ ___
 Более подробно с результатми тестов (шаги, скриншоты, видео прохождения теста, page source и browser console log) можно ознакомиться:
 * В Jenkins через Allure Reports (перейти по ссылке в отчете телеграм)
 * В Allure TestOps.
-
-https://github.com/A3211/qa_guru_5_11_quick_project
 ___
 
 ## Анализ результатов в Jenkins через Allure Reports

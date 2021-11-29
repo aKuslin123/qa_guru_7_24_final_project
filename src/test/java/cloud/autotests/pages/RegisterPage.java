@@ -23,7 +23,6 @@ public class RegisterPage {
     private SelenideElement confirmPassword = $("#ConfirmPassword");
     private SelenideElement registerButton = $("#register-button");
     private SelenideElement resultPage = $(".result");
-
     private SelenideElement myAccount = $(".header-links").$(".account");
 
     @Step("Открываем страницу регистрации")

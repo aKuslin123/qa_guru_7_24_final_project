@@ -4,7 +4,6 @@ plugins {
 }
 
 repositories {
-    maven {url = "https://dl.bintray.com/qameta/maven-unstable/"}
     mavenCentral()
 }
 
@@ -33,11 +32,11 @@ dependencies {
             "io.qameta.allure:allure-rest-assured:$allureVersion",
             "com.github.javafaker:javafaker:1.0.2",
             "io.rest-assured:rest-assured:4.4.0",
-            "org.junit.jupiter:junit-jupiter-api:$junitVersion",
             "com.fasterxml.jackson.core:jackson-annotations:$jacksonVersion",
             "com.fasterxml.jackson.core:jackson-databind:$jacksonVersion",
             "org.json:json:20210307",
-            "org.aeonbits.owner:owner:1.0.12")
+            "org.aeonbits.owner:owner:1.0.12",
+            "org.junit.jupiter:junit-jupiter-api:$junitVersion")
     testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:$junitVersion"
 }
 
